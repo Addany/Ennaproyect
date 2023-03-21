@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Botto11"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="44dp"
+        android:background="@null"
+        android:contentDescription="Botton12"
+        app:layout_constraintBottom_toTopOf="@+id/textView49"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:srcCompat="@drawable/group33" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="21dp"
+        android:background="@null"
+        android:contentDescription="Boton14"
+        app:layout_constraintBottom_toTopOf="@+id/textView48"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:srcCompat="@drawable/group33" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:background="@null"
+        android:contentDescription="Boton15"
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton16"
+        app:srcCompat="@drawable/group33" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="28dp"
+        android:text="Mas"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="Cafes"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toStartOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="28dp"
+        android:text="Hoteles"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toStartOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="Restaurantes"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toStartOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="8dp"
+        android:text="Explorar cerca..."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="2dp"
+        android:background="@null"
+        android:contentDescription="Boton13"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        app:srcCompat="@drawable/group33" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton16"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton16"
+        app:layout_constraintStart_toStartOf="@+id/imageButton16"
+        app:layout_constraintTop_toTopOf="@+id/imageButton16"
+        app:srcCompat="@drawable/pngwing3" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton15"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton15"
+        app:layout_constraintStart_toStartOf="@+id/imageButton15"
+        app:layout_constraintTop_toTopOf="@+id/imageButton15"
+        app:srcCompat="@drawable/r23" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton14"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton14"
+        app:layout_constraintStart_toStartOf="@+id/imageButton14"
+        app:layout_constraintTop_toTopOf="@+id/imageButton14"
+        app:srcCompat="@drawable/r22" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton17"
+        app:layout_constraintStart_toStartOf="@+id/imageButton17"
+        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:srcCompat="@drawable/vector" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="196dp"
+        android:src="@drawable/rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:text="Museo de Arqueología Olmeca"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="John Spark s/n, Puerto Mexico"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView47"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="16dp"
+        android:text="96510"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/r26"
+        app:layout_constraintBottom_toTopOf="@+id/imageView38"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:contentDescription="Boton22"
+        android:src="@drawable/r25"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+        app:layout_constraintTop_toTopOf="@+id/imageView40"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:contentDescription="button23"
+        android:src="@drawable/seekpng1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+        app:layout_constraintTop_toTopOf="@+id/imageView40"
+        app:layout_constraintVertical_bias="0.617" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
