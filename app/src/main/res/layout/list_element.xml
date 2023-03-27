@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation='horizontal'
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/Imagen"
+                android:layout_width="109dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/r41" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/Imagen"
+                android:orientation="vertical"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@+id/Imagen">
+
+                <TextView
+                    android:id="@+id/namebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="El bomboncito"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/direccionbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Uruguay Esq.Haiti #188 Col. Las America"
+                    android:textColor="#699AB5" />
+                <TextView
+                    android:id="@+id/horaabierto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hora abierto:12 PM–2:30 AM"
+                    android:textColor="#699AB5" />
+
+                <TextView
+                    android:id="@+id/abierto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abierto"
+                    android:textColor="#6AB569" />
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Imagen"
+                android:layout_alignBottom="@+id/Imagen"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="vector"
+                app:srcCompat="@drawable/vector" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
