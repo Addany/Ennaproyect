@@ -2,251 +2,301 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.dashboard.DashboardFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="90dp">
 
-    <ImageView
-        android:id="@+id/imageView17"
+    <ImageButton
+        android:id="@+id/imageButton26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="228dp"
-        android:src="@drawable/rectangle34"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView54" />
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:contentDescription="boton1"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton28"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton27" />
 
-    <TextView
-        android:id="@+id/textView42"
+    <ImageButton
+        android:id="@+id/imageButton24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="4dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="24dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView33"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="236dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="23dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView52"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView52"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/rectangle35"
-        app:layout_constraintBottom_toTopOf="@+id/imageView15"
-        app:layout_constraintEnd_toStartOf="@+id/textView23" />
+        android:background="@null"
+        android:contentDescription="Tiendas"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton31"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton25" />
 
-    <TextView
-        android:id="@+id/textView13"
+    <ImageButton
+        android:id="@+id/imageButton28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:contentDescription="boton3"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton24"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton29" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="boton6"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton30"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView44"
+    <ImageButton
+        android:id="@+id/imageButton30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="@null"
+        android:contentDescription="boton8"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView28"
+    <ImageButton
+        android:id="@+id/imageButton29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="4dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:contentDescription="boton4"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton25"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView23"
+    <ImageButton
+        android:id="@+id/imageButton27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="22dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:contentDescription="boton2"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton29"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView45"
+    <ImageButton
+        android:id="@+id/imageButton31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="32dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView46"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@null"
+        android:contentDescription="boton7"
+        android:src="@drawable/fo1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton30" />
 
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView54"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView54"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="236dp"
-        android:text="Ultima vez visitado 03/23"
-        android:textColor="#8BC34A"
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="93dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="176dp"
+        android:background="@null"
+        android:contentDescription="botoncamara"
+        android:src="@drawable/camera2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:src="@drawable/camera1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton18"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/imageButton18"
+        app:layout_constraintTop_toTopOf="@+id/imageButton18"
+        app:layout_constraintVertical_bias="0.41" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/rectangle34"
-        app:layout_constraintBottom_toTopOf="@+id/imageView16"
-        app:layout_constraintEnd_toStartOf="@+id/textView21" />
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/re2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton30"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton30" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tomar una foto"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton30"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton30" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:src="@drawable/re1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton26"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton26"
+        app:layout_constraintTop_toTopOf="@+id/imageButton26" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Edificaciones"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton26"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton26" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/re11"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton28"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton28"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/imageButton28"
+        app:layout_constraintTop_toTopOf="@+id/imageButton28" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Hospitales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton28"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton28" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:src="@drawable/re3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton27"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton27"
+        app:layout_constraintTop_toTopOf="@+id/imageButton27"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Plazas comerciales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton27"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton27" />
+
+    <ImageView
+        android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="124dp"
-        android:layout_marginBottom="8dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView23"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/re4"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton29"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton29" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="124dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/rectangle36"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
-        app:layout_constraintEnd_toStartOf="@+id/textView27" />
+        android:src="@drawable/re5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton24"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton24" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/re6"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton25"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton25" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/re7"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton31"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton31" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
+        android:text="Parques"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton29"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton29" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="4dp"
-        android:text="Museo de Arqueología Olmeca"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginBottom="32dp"
+        android:text="Bancos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton24"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton24" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:text="Veces visitado 4"
-        android:textColor="#8BC34A"
-        app:layout_constraintBottom_toTopOf="@+id/textView22"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tiendas"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton25"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton25" />
 
-    <ImageView
-        android:id="@+id/imageView14"
+    <TextView
+        android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/rectangle35"
-        app:layout_constraintBottom_toTopOf="@+id/imageView17"
-        app:layout_constraintEnd_toStartOf="@+id/textView45" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:text="Bares"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton31"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton31" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

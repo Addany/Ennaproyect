@@ -38,38 +38,28 @@
         android:id="@+id/imageView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/rectangle" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="49dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="44dp"
-        android:background="@null"
-        android:contentDescription="Botton12"
-        app:layout_constraintBottom_toTopOf="@+id/textView49"
-        app:layout_constraintEnd_toEndOf="@+id/imageView18"
-        app:srcCompat="@drawable/group33" />
-
-    <ImageButton
         android:id="@+id/imageButton16"
         android:layout_width="51dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginEnd="48dp"
         android:background="@null"
         android:contentDescription="Boton14"
         app:layout_constraintBottom_toTopOf="@+id/textView48"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:srcCompat="@drawable/group33" />
 
     <ImageButton
         android:id="@+id/imageButton15"
         android:layout_width="53dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="4dp"
         android:background="@null"
         android:contentDescription="Boton15"
         app:layout_constraintBottom_toTopOf="@+id/textView43"
@@ -77,32 +67,21 @@
         app:srcCompat="@drawable/group33" />
 
     <TextView
-        android:id="@+id/textView49"
+        android:id="@+id/textView48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="28dp"
-        android:text="Mas"
+        android:text="Cafes"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="@+id/imageView18" />
 
     <TextView
-        android:id="@+id/textView48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="28dp"
-        android:text="Cafes"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toStartOf="@+id/textView49" />
-
-    <TextView
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="28dp"
         android:text="Hoteles"
         android:textColor="#000000"
@@ -113,7 +92,7 @@
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="44dp"
         android:layout_marginBottom="28dp"
         android:text="Restaurantes"
         android:textColor="#000000"
@@ -135,7 +114,7 @@
         android:id="@+id/imageButton14"
         android:layout_width="53dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="2dp"
         android:background="@null"
         android:contentDescription="Boton13"
@@ -172,15 +151,5 @@
         app:layout_constraintStart_toStartOf="@+id/imageButton14"
         app:layout_constraintTop_toTopOf="@+id/imageButton14"
         app:srcCompat="@drawable/r22" />
-
-    <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton17"
-        app:layout_constraintStart_toStartOf="@+id/imageButton17"
-        app:layout_constraintTop_toTopOf="@+id/imageButton17"
-        app:srcCompat="@drawable/vector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

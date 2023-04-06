@@ -39,16 +39,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        imageButton17 = (ImageButton) findViewById(R.id.imageButton17);
-
-        imageButton17.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
 
     }
 
