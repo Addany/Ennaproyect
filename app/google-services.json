@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "638720462043",
+    "project_id": "altepetl",
+    "storage_bucket": "altepetl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638720462043:android:482389b049a404538bd0fe",
+        "android_client_info": {
+          "package_name": "com.example.pruebaaplicacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638720462043-39ro2gfc6agsicoru8phqsq0gqj6ea3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjSCIuYauxq1xhjI_2teyxUwW2fWJiC-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638720462043-39ro2gfc6agsicoru8phqsq0gqj6ea3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
