@@ -34,14 +34,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation" />
-<!-- Este es el fragment que contiene el mapa, editalo para que jale correctamente con la info
- del sitio,-->
-    <fragment
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/map"
-        tools:context=".MapsActivity"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        app:navGraph="@navigation/mobile_navigation"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

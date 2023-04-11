@@ -12,4 +12,6 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="no_tienes_una_cuenta_registrate">¿No tienes una cuenta? Registrate</string>
+    <string name="introduce_tu_contrase_a">Introduce tu contraseña</string>
 </resources>
