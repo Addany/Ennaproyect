@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="96dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="164dp"
         android:text="¿No tienes una cuenta? Registrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -31,9 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="31dp"
         android:src="@drawable/r61"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton21"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -44,11 +44,11 @@
         android:layout_marginBottom="12dp"
         android:text="Introduce tu contraseña "
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edit_password"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/edit_user"
         android:layout_width="321dp"
         android:layout_height="51dp"
         android:ems="10"
@@ -62,31 +62,16 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edit_password"
         android:layout_width="327dp"
         android:layout_height="49dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton21"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.076" />
-
-    <ImageButton
-        android:id="@+id/imageButton19"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="8dp"
-        android:background="@null"
-        android:contentDescription="botonojo"
-        android:src="@drawable/botonojo1"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView"
@@ -119,27 +104,16 @@
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="358dp"
-        android:layout_height="69dp"
-        android:layout_marginEnd="16dp"
-        android:background="@null"
-        android:contentDescription="boton12"
-        android:src="@drawable/btn62"
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:text="Entrar"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar sesión"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton21"
-        app:layout_constraintStart_toStartOf="@+id/imageButton21"
-        app:layout_constraintTop_toTopOf="@+id/imageButton21" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
