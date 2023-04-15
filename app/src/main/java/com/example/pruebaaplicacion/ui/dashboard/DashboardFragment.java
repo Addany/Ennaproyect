@@ -64,10 +64,6 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-
-
-
-
     }
 
     @Override
