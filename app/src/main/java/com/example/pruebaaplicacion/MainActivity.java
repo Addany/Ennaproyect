@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity  {
 
     private ActivityMainBinding binding;
 
-    ImageButton imageButton17;
 
 
     @Override
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
 
 
         BottomNavigationView navView = findViewById(R.id.nav_view);

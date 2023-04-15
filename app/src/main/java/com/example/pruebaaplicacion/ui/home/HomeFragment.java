@@ -1,9 +1,12 @@
 package com.example.pruebaaplicacion.ui.home;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,14 +28,32 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
 
     private GoogleMap mMap;
+    ImageButton imageButton;
+    MediaPlayer mp;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+
         HomeViewModel homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
-
         binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View view = binding.getRoot();
+
+
+        //SE BUSCA EL MEDIAPLAYER, OSEA EL SONIDO A REPRODUCIR
+        mp = MediaPlayer.create (getContext(), R.raw.beep);
+        //SE DECLARA EL BOTON EN IMAGEN Y SE IDENTIFICA
+        imageButton = (ImageButton)view.findViewById(R.id.imageButton);
+        //CON ONCLICK SE LLAMA EL RECURSO Y AL DARLE CLICK AL BOTON SE REPRODUCE EL MISMO.
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mp.start();
+            }
+        });
+
 
         SupportMapFragment supportMapFragment = (SupportMapFragment)
                 getChildFragmentManager().findFragmentById(R.id.map);
@@ -47,8 +68,15 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        return root;
+        return view;
+
+
+
     }
+
+
+
+
 
     private FragmentManager getSupportFragmentManager() {
 
