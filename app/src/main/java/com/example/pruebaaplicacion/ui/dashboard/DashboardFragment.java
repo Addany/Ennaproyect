@@ -31,8 +31,10 @@ public class DashboardFragment extends Fragment {
 
     Activity context;
     ImageButton imageButton18;
+    ImageButton imageButton31;
 
-    
+
+
 
     private FragmentDashboardBinding binding;
 
@@ -64,7 +66,18 @@ public class DashboardFragment extends Fragment {
             }
         });
 
+        imageButton31 = (ImageButton) context.findViewById(R.id.imageButton31);
+        imageButton31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MainActivity3.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
 
     @Override
     public void onDestroyView() {

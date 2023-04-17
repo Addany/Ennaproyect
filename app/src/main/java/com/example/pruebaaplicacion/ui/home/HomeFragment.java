@@ -1,5 +1,7 @@
 package com.example.pruebaaplicacion.ui.home;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.pruebaaplicacion.MainActivity6;
 import com.example.pruebaaplicacion.R;
 import com.example.pruebaaplicacion.databinding.FragmentHomeBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -30,6 +33,8 @@ public class HomeFragment extends Fragment {
     private GoogleMap mMap;
     ImageButton imageButton;
     MediaPlayer mp;
+    Activity context;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -73,7 +78,6 @@ public class HomeFragment extends Fragment {
 
 
     }
-
 
 
 

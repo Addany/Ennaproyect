@@ -1,5 +1,7 @@
 package com.example.pruebaaplicacion.ui.notifications;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -7,9 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.pruebaaplicacion.MainActivity6;
 import com.example.pruebaaplicacion.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
@@ -30,7 +34,6 @@ public class NotificationsFragment extends Fragment {
     private EditText edit_password;
     private Button btn_login;
     private Button btn_cerrar_sesion;
-
     private FragmentNotificationsBinding binding;
 
 
@@ -99,6 +102,7 @@ public class NotificationsFragment extends Fragment {
 
     }
 
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -107,3 +111,4 @@ public class NotificationsFragment extends Fragment {
     }
 
 }
+
