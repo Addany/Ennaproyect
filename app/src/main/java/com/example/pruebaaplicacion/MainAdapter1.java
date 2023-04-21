@@ -15,7 +15,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.myViewHolder> {
+public class MainAdapter1 extends FirebaseRecyclerAdapter<MainModel1, MainAdapter1.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -23,15 +23,16 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
      *
      * @param options
      */
-    public MainAdapter(@NonNull FirebaseRecyclerOptions<MainModel> options) {
+    public MainAdapter1(@NonNull FirebaseRecyclerOptions<MainModel1> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull MainModel model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull MainModel1 model) {
         holder.nombre.setText(model.getNombre());
         holder.direccion.setText(model.getDireccion());
-        holder.horas.setText(model.getHoras());
+        holder.estrellas.setText(model.getEstrellas());
+        holder.telefono.setText(model.getTelefono());
 
         Glide.with(holder.img.getContext())
                 .load(model.getSurl())
@@ -45,7 +46,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_item1,parent,false);
         return new myViewHolder(view);
     }
 
@@ -53,7 +54,7 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
 
 
         CircleImageView img;
-        TextView nombre,direccion,horas;
+        TextView nombre,direccion,estrellas,telefono;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -61,7 +62,8 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
             img = (CircleImageView)itemView.findViewById(R.id.img1);
             nombre = (TextView)itemView.findViewById(R.id.nametext);
             direccion = (TextView)itemView.findViewById(R.id.coursetext);
-            horas = (TextView)itemView.findViewById(R.id.emailtext);
+            estrellas = (TextView)itemView.findViewById(R.id.stars);
+            telefono = (TextView)itemView.findViewById(R.id.telefono);
 
         }
     }

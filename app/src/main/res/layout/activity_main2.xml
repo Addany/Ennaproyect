@@ -1,338 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity5">
 
-  <ImageButton
-      android:id="@+id/imageButton5"
-      android:layout_width="370dp"
-      android:layout_height="50dp"
-      android:layout_marginEnd="20dp"
-      android:layout_marginBottom="16dp"
-      android:background="@null"
-      android:contentDescription="Boton31"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+  <ImageView
+      android:id="@+id/imageView13"
+      android:layout_width="344dp"
+      android:layout_height="137dp"
+      android:layout_marginEnd="34dp"
+      android:layout_marginBottom="32dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView6"
       app:layout_constraintEnd_toEndOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
+      app:srcCompat="@drawable/rectangle232" />
 
   <ImageButton
-      android:id="@+id/imageButton9"
-      android:layout_width="370dp"
-      android:layout_height="55dp"
-      android:layout_marginBottom="12dp"
-      android:background="@null"
-      android:contentDescription="boton32"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton10"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.609"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageButton
-      android:id="@+id/imageButton10"
-      android:layout_width="369dp"
-      android:layout_height="58dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="188dp"
-      android:background="@null"
-      android:contentDescription="boton33"
+      android:id="@+id/imageButton23"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="26dp"
+      android:layout_marginBottom="72dp"
+      android:contentDescription="boton mas"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageButton
-      android:id="@+id/imageButton8"
-      android:layout_width="372dp"
-      android:layout_height="56dp"
-      android:layout_marginBottom="8dp"
-      android:background="@null"
-      android:contentDescription="boton34"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton9"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.589"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageButton
-      android:id="@+id/imageButton7"
-      android:layout_width="369dp"
-      android:layout_height="53dp"
-      android:layout_marginEnd="20dp"
-      android:layout_marginBottom="8dp"
-      android:background="@null"
-      android:contentDescription="boton35"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton3"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageButton
-      android:id="@+id/imageButton6"
-      android:layout_width="369dp"
-      android:layout_height="50dp"
-      android:layout_marginBottom="12dp"
-      android:background="@null"
-      android:contentDescription="boton36"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton7"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.523"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageButton
-      android:id="@+id/imageButton3"
-      android:layout_width="372dp"
-      android:layout_height="50dp"
-      android:layout_marginStart="23dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="12dp"
-      android:background="@null"
-      android:contentDescription="boton37"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/rectangle41" />
-
-  <ImageView
-      android:id="@+id/imageView19"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton5"
-      app:layout_constraintHorizontal_bias="0.08"
-      app:layout_constraintStart_toStartOf="@+id/imageButton5"
-      app:layout_constraintTop_toTopOf="@+id/imageButton5"
-      app:layout_constraintVertical_bias="0.413"
-      app:srcCompat="@drawable/r45" />
-
-  <ImageView
-      android:id="@+id/imageView23"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton6"
-      app:layout_constraintHorizontal_bias="0.094"
-      app:layout_constraintStart_toStartOf="@+id/imageButton6"
-      app:layout_constraintTop_toTopOf="@+id/imageButton6"
-      app:layout_constraintVertical_bias="0.3"
-      app:srcCompat="@drawable/r46" />
-
-  <ImageView
-      android:id="@+id/imageView25"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton7"
-      app:layout_constraintHorizontal_bias="0.108"
-      app:layout_constraintStart_toStartOf="@+id/imageButton7"
-      app:layout_constraintTop_toTopOf="@+id/imageButton7"
-      app:layout_constraintVertical_bias="0.387"
-      app:srcCompat="@drawable/r47" />
-
-  <ImageView
-      android:id="@+id/imageView27"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-      app:layout_constraintHorizontal_bias="0.083"
-      app:layout_constraintStart_toStartOf="@+id/imageButton3"
-      app:layout_constraintTop_toTopOf="@+id/imageButton3"
-      app:layout_constraintVertical_bias="0.366"
-      app:srcCompat="@drawable/r48" />
-
-  <ImageView
-      android:id="@+id/imageView28"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-      app:layout_constraintHorizontal_bias="0.09"
-      app:layout_constraintStart_toStartOf="@+id/imageButton8"
-      app:layout_constraintTop_toTopOf="@+id/imageButton8"
-      app:layout_constraintVertical_bias="0.447"
-      app:srcCompat="@drawable/r49" />
-
-  <ImageView
-      android:id="@+id/imageView29"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-      app:layout_constraintHorizontal_bias="0.069"
-      app:layout_constraintStart_toStartOf="@+id/imageButton9"
-      app:layout_constraintTop_toTopOf="@+id/imageButton9"
-      app:layout_constraintVertical_bias="0.451"
-      app:srcCompat="@drawable/r50" />
-
-  <ImageView
-      android:id="@+id/imageView33"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton10"
-      app:layout_constraintHorizontal_bias="0.064"
-      app:layout_constraintStart_toStartOf="@+id/imageButton10"
-      app:layout_constraintTop_toTopOf="@+id/imageButton10"
-      app:srcCompat="@drawable/r51" />
+      app:srcCompat="@drawable/cruz" />
 
   <TextView
-      android:id="@+id/textView3"
+      android:id="@+id/textView8"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="216dp"
-      android:text="Edificaciones"
+      android:layout_marginEnd="227dp"
+      android:layout_marginBottom="16dp"
+      android:text="Fotos capturadas"
       android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView4"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton5" />
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView16"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <ImageButton
+      android:id="@+id/imageButton20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="5dp"
+      android:layout_marginBottom="67dp"
+      android:contentDescription="boton mas1"
+      app:layout_constraintBottom_toTopOf="@+id/imageView43"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/cruz" />
 
   <TextView
-      android:id="@+id/textView4"
-      android:layout_width="272dp"
-      android:layout_height="15dp"
-      android:layout_marginEnd="24dp"
-      android:layout_marginBottom="4dp"
-      android:text="Museo de arqueologia olmeca, Las escolleras, Plaza San Jose...."
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton5" />
-
-  <TextView
-      android:id="@+id/textView11"
+      android:id="@+id/textView6"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginEnd="236dp"
-      android:text="Bancos"
+      android:layout_marginBottom="10dp"
+      android:text="Lugares visitado"
       android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView14"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton6" />
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView17"
+      app:layout_constraintEnd_toEndOf="parent" />
 
-  <TextView
-      android:id="@+id/textView14"
+  <ImageView
+      android:id="@+id/imageView17"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="140dp"
-      android:layout_marginBottom="8dp"
-      android:text="Santander, Citibanamex, BBVA...."
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton6" />
+      android:layout_marginEnd="9dp"
+      android:layout_marginBottom="28dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView8"
+      app:layout_constraintEnd_toStartOf="@+id/imageView20"
+      app:srcCompat="@drawable/rectangle34" />
 
-  <TextView
-      android:id="@+id/textView15"
+  <ImageView
+      android:id="@+id/imageView20"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="248dp"
-      android:text="Bares"
-      android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView18"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton7" />
+      android:layout_marginEnd="5dp"
+      android:layout_marginBottom="28dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView8"
+      app:layout_constraintEnd_toStartOf="@+id/imageView24"
+      app:srcCompat="@drawable/rectangle35" />
+
+  <ImageView
+      android:id="@+id/imageView24"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="11dp"
+      android:layout_marginBottom="71dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView41"
+      app:layout_constraintEnd_toStartOf="@+id/imageButton20"
+      app:srcCompat="@drawable/rectangle36" />
+
+  <ImageView
+      android:id="@+id/imageView16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="33dp"
+      android:layout_marginBottom="17dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView44"
+      app:layout_constraintEnd_toStartOf="@+id/imageView41"
+      app:srcCompat="@drawable/image91" />
+
+  <ImageView
+      android:id="@+id/imageView41"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView45"
+      app:layout_constraintEnd_toStartOf="@+id/imageView43"
+      app:srcCompat="@drawable/image10" />
+
+  <ImageView
+      android:id="@+id/imageView43"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="34dp"
+      android:layout_marginBottom="53dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton23"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/image11" />
+
+  <ImageView
+      android:id="@+id/imageView44"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="34dp"
+      android:layout_marginBottom="53dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/imageView45"
+      app:srcCompat="@drawable/image12" />
+
+  <ImageView
+      android:id="@+id/imageView45"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="43dp"
+      android:layout_marginBottom="53dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/imageButton23"
+      app:srcCompat="@drawable/image13" />
 
   <TextView
-      android:id="@+id/textView18"
+      android:id="@+id/textView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="44dp"
+      android:layout_marginBottom="88dp"
+      android:text="Elautentico"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+      app:layout_constraintEnd_toEndOf="@+id/imageView13" />
+
+  <ImageView
+      android:id="@+id/imageView15"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginEnd="48dp"
-      android:layout_marginBottom="8dp"
-      android:text="El bomboncito, La bocana,Barlovento Bar and Snacks......"
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton7" />
+      android:layout_marginBottom="32dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView6"
+      app:layout_constraintEnd_toStartOf="@+id/textView10"
+      app:srcCompat="@drawable/ellipse43" />
 
-  <TextView
-      android:id="@+id/textView19"
+  <ImageButton
+      android:id="@+id/imageButton22"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="216dp"
-      android:text="Farmacias"
-      android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView20"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton3" />
+      android:layout_marginEnd="5dp"
+      android:contentDescription="configuraciones"
+      app:layout_constraintBottom_toTopOf="@+id/imageView13"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/config1" />
 
-  <TextView
-      android:id="@+id/textView20"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="80dp"
-      android:layout_marginBottom="4dp"
-      android:text="Farmacias similares, Farmacia Guadalajara......"
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton3" />
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="147dp"
+      android:layout_height="53dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="16dp"
+      android:text="Cerrar sesion"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+      app:layout_constraintEnd_toEndOf="@+id/imageView13" />
 
-  <TextView
-      android:id="@+id/textView35"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="232dp"
-      android:text="Tiendas"
-      android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView36"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-      app:layout_constraintTop_toTopOf="@+id/imageButton8" />
-
-  <TextView
-      android:id="@+id/textView36"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="40dp"
-      android:text="Chedrahui 1, Bodega Ahorrera, Wallmart, Sams Club......"
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-      app:layout_constraintTop_toTopOf="@+id/imageButton8"
-      app:layout_constraintVertical_bias="0.827" />
-
-  <TextView
-      android:id="@+id/textView37"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="164dp"
-      android:text="Plazas comerciales"
-      android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView38"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton9" />
-
-  <TextView
-      android:id="@+id/textView38"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="92dp"
-      android:layout_marginBottom="8dp"
-      android:text="Forum, Acaya,El dorado, Cristal,Quadrum....."
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton9" />
-
-  <TextView
-      android:id="@+id/textView39"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="228dp"
-      android:layout_marginBottom="4dp"
-      android:text="Parques"
-      android:textColor="#000000"
-      app:layout_constraintBottom_toTopOf="@+id/textView40"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton10" />
-
-  <TextView
-      android:id="@+id/textView40"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="28dp"
-      android:layout_marginBottom="12dp"
-      android:text="La noria, Miguel Hidalgo, Independencia,Puerto Mexico....."
-      android:textColor="#000000"
-      android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
-      app:layout_constraintEnd_toEndOf="@+id/imageButton10" />
 </androidx.constraintlayout.widget.ConstraintLayout>

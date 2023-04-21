@@ -16,7 +16,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.pruebaaplicacion.MainActivity3;
 import com.example.pruebaaplicacion.MainActivity6;
+import com.example.pruebaaplicacion.MainActivity7;
 import com.example.pruebaaplicacion.R;
 import com.example.pruebaaplicacion.databinding.FragmentHomeBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,7 +33,8 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
 
     private GoogleMap mMap;
-    ImageButton imageButton;
+    ImageButton imageButton15;
+
     MediaPlayer mp;
     Activity context;
 
@@ -40,24 +43,13 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
 
+        context =getActivity();
+
         HomeViewModel homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-
-        //SE BUSCA EL MEDIAPLAYER, OSEA EL SONIDO A REPRODUCIR
-        mp = MediaPlayer.create (getContext(), R.raw.beep);
-        //SE DECLARA EL BOTON EN IMAGEN Y SE IDENTIFICA
-        imageButton = (ImageButton)view.findViewById(R.id.imageButton);
-        //CON ONCLICK SE LLAMA EL RECURSO Y AL DARLE CLICK AL BOTON SE REPRODUCE EL MISMO.
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                mp.start();
-            }
-        });
 
 
         SupportMapFragment supportMapFragment = (SupportMapFragment)
@@ -75,11 +67,22 @@ public class HomeFragment extends Fragment {
 
         return view;
 
-
-
     }
 
+    public void onStart(){
+        super.onStart();
+        mp = MediaPlayer.create (getContext(), R.raw.beep);
+        imageButton15 = (ImageButton) context.findViewById(R.id.imageButton15);
+        imageButton15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MainActivity7.class);
+                startActivity(intent);
 
+                mp.start();
+            }
+        });
+    }
 
 
     private FragmentManager getSupportFragmentManager() {

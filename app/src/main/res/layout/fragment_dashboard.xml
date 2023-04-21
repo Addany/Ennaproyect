@@ -62,11 +62,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="305dp"
         android:background="@null"
         android:contentDescription="boton8"
         android:src="@drawable/fo1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
@@ -98,36 +98,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="305dp"
         android:background="@null"
         android:contentDescription="boton7"
         android:src="@drawable/fo1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton30" />
-
-    <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="93dp"
-        android:layout_height="89dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="176dp"
-        android:background="@null"
-        android:contentDescription="botoncamara"
-        android:src="@drawable/camera2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:src="@drawable/camera1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton18"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/imageButton18"
-        app:layout_constraintTop_toTopOf="@+id/imageButton18"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintEnd_toStartOf="@+id/imageButton30" />
 
     <ImageView
         android:id="@+id/imageView2"
