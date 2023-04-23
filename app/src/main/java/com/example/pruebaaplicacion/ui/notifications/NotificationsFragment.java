@@ -2,6 +2,7 @@ package com.example.pruebaaplicacion.ui.notifications;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,7 +14,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.pruebaaplicacion.LoginActivity;
 import com.example.pruebaaplicacion.MainActivity6;
+import com.example.pruebaaplicacion.MainActivity7;
 import com.example.pruebaaplicacion.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
@@ -29,77 +32,46 @@ import com.example.pruebaaplicacion.databinding.FragmentNotificationsBinding;
 import com.google.firebase.auth.FirebaseUser;
 
 public class NotificationsFragment extends Fragment {
-    private FirebaseAuth mAuth;
-    private EditText edit_user;
-    private EditText edit_password;
-    private Button btn_login;
-    private Button btn_cerrar_sesion;
+
+    MediaPlayer mp;
+    Activity context;
+    Button button5;
+
+    Button button4;
+
     private FragmentNotificationsBinding binding;
 
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+        context =getActivity();
+        NotificationsViewModel notificationsViewModel =
+                new ViewModelProvider(this).get(NotificationsViewModel.class);
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
-        View view;
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        View root = binding.getRoot();
 
-        if (user==null) {
+        return root;
+    }
 
-            view = binding.getRoot();
-
-            edit_user = view.findViewById(R.id.edit_user);
-            edit_password = view.findViewById(R.id.edit_password);
-            btn_login = view.findViewById(R.id.btn_login);
-            btn_cerrar_sesion= view.findViewById(R.id.btn_cerrar_sesion);
-            mAuth = FirebaseAuth.getInstance();
-            btn_login.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    String email = edit_user.getText().toString().trim();
-                    String password = edit_password.getText().toString().trim();
-
-                    mAuth.signInWithEmailAndPassword(email, password)
-                            .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        Navigation.findNavController(
-                                                view
-                                        ).navigate(R.id.action_navigation_notifications_to_user2);
-                                    } else {
-                                        Log.d("Tag",
-                                                "Error al loguear",
-                                                task.getException());
-                                        Toast.makeText(getActivity(),
-                                                "Error al loguear",
-                                                Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-                }
-            });
-
-        }
-        else{
-            view = inflater.inflate(R.layout.fragment_user,container,false);
-            btn_cerrar_sesion= view.findViewById(R.id.btn_cerrar_sesion);
-            btn_cerrar_sesion.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(getActivity(), "Cerrando sesion",Toast.LENGTH_SHORT).show();
-
-                    FirebaseAuth.getInstance().signOut();
-                    Navigation.findNavController(view).navigate(R.id.action_navigation_notifications_to_navigation_home);
-                }
-            });
-
-        }
-
-
-        return view;
-
+    public void onStart(){
+        super.onStart();
+        button4 = (Button) context.findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        button5 = (Button) context.findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MainActivity6.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -107,8 +79,5 @@ public class NotificationsFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-
     }
-
 }
-
