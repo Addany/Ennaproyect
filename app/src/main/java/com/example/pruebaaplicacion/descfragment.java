@@ -19,17 +19,18 @@ public class descfragment extends Fragment {
 
     private String mParam1;
     private String mParam2;
-    String name, course, email, purl,abierto;
+    String name, course, email, purl,servicio,social,telefono,valoracion;
     public descfragment() {
 
     }
 
-    public descfragment(String name, String course, String email, String purl,String abierto) {
+    public descfragment(String name, String purl,String servicio,String social,String telefono,String valoracion) {
         this.name=name;
-        this.course=course;
-        this.email=email;
         this.purl=purl;
-        this.abierto=abierto;
+        this.servicio=servicio;
+        this.social=social;
+        this.telefono=telefono;
+        this.valoracion=valoracion;
     }
 
     public static descfragment newInstance(String param1, String param2) {
@@ -58,14 +59,16 @@ public class descfragment extends Fragment {
 
         ImageView imageholder=view.findViewById(R.id.imagegholder);
         TextView nameholder=view.findViewById(R.id.nameholder);
-        TextView courseholder=view.findViewById(R.id.courseholder);
-        TextView emailholder=view.findViewById(R.id.emailholder);
-        TextView abiertoholder=view.findViewById(R.id.emailholder3);
+        TextView telefonoholder=view.findViewById(R.id.courseholder);
+        TextView socialholder=view.findViewById(R.id.emailholder);
+        TextView servicioholder=view.findViewById(R.id.emailholder3);
+        TextView valoracionholder=view.findViewById(R.id.emailholder4);
 
         nameholder.setText(name);
-        courseholder.setText(course);
-        emailholder.setText(email);
-        abiertoholder.setText(abierto);
+        telefonoholder.setText(telefono);
+        servicioholder.setText(servicio);
+        socialholder.setText(social);
+        valoracionholder.setText(valoracion);
         Glide.with(getContext()).load(purl).into(imageholder);
 
 

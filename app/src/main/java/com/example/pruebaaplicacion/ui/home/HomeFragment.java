@@ -7,18 +7,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.pruebaaplicacion.MainActivity3;
-import com.example.pruebaaplicacion.MainActivity6;
-import com.example.pruebaaplicacion.MainActivity7;
+import com.example.pruebaaplicacion.MainActivity10;
+import com.example.pruebaaplicacion.MainActivity15;
+import com.example.pruebaaplicacion.MainActivity9;
 import com.example.pruebaaplicacion.R;
 import com.example.pruebaaplicacion.databinding.FragmentHomeBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -34,6 +32,9 @@ public class HomeFragment extends Fragment {
 
     private GoogleMap mMap;
     ImageButton imageButton15;
+
+    ImageButton imageButton16;
+    ImageButton imageButton33;
 
     MediaPlayer mp;
     Activity context;
@@ -76,9 +77,28 @@ public class HomeFragment extends Fragment {
         imageButton15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, MainActivity7.class);
+                Intent intent = new Intent(context, MainActivity9.class);
                 startActivity(intent);
+                mp.start();
+            }
+        });
 
+        imageButton16 = (ImageButton) context.findViewById(R.id.imageButton16);
+        imageButton16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MainActivity10.class);
+                startActivity(intent);
+                mp.start();
+            }
+        });
+
+        imageButton33 = (ImageButton) context.findViewById(R.id.imageButton33);
+        imageButton33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MainActivity15.class);
+                startActivity(intent);
                 mp.start();
             }
         });
