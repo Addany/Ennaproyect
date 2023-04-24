@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +34,7 @@ public class DashboardFragment extends Fragment {
     ImageButton imageButton28;
     ImageButton imageButton26;
     ImageButton imageButton24;
+    ImageButton camera;
     MediaPlayer mp;
 
     private FragmentDashboardBinding binding;
@@ -124,6 +126,21 @@ public class DashboardFragment extends Fragment {
                 Intent intent = new Intent(context, MainActivity16.class);
                 startActivity(intent);
                 mp.start();
+            }
+        });
+        camera =(ImageButton)context.findViewById(R.id.imageButton30);
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent();
+                    intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivity(intent);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+
             }
         });
 
