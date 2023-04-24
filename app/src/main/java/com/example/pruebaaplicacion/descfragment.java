@@ -24,10 +24,8 @@ public class descfragment extends Fragment {
 
     }
 
-    public descfragment(String name, String course, String email, String purl,String servicio,String social,String telefono,String valoracion) {
+    public descfragment(String name, String purl,String servicio,String social,String telefono,String valoracion) {
         this.name=name;
-        this.course=course;
-        this.email=email;
         this.purl=purl;
         this.servicio=servicio;
         this.social=social;

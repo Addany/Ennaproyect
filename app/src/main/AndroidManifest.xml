@@ -84,12 +84,6 @@
             android:name=".MainActivity4"
             android:exported="true" />
         <activity
-            android:name=".MainActivity3"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity7"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity2"
             android:exported="false" />
     </application>
