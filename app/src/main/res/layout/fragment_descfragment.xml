@@ -101,6 +101,7 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
